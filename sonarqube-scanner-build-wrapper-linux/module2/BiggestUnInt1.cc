@@ -11,7 +11,7 @@
 
 using namespace std;
 
-void bitsout( unsigned int n );
+void bitsout1( unsigned int n );
 
 int main(int argc, char* argv[])
 {
@@ -28,7 +28,7 @@ int main(int argc, char* argv[])
     j += i ;   // this sets    j = 2i-1  (we hope)
     i *= 2 ;   // this doubles i         (we hope)
     cout << N << ":\t" << oldi << "\t" << j << "\t" << i << "\t";
-    bitsout(i);
+    bitsout1(i);
     cout << endl ;
     N++;
   } while ( j+1==i && i!=0 ) ; // keep going until something odd happens
@@ -39,7 +39,7 @@ int main(int argc, char* argv[])
   //  (           '&&'   means    "_and_"           )
 }
 
-void bitsout( unsigned int m )
+void bitsout1( unsigned int m )
 {
   int lastbit  ;
   unsigned int two_to_power_i ;

@@ -7,10 +7,10 @@ using namespace std;
 
 
 // Declaration of Date class
-class Date {
+class Date1 {
 
 public:
-  Date(int, int, int);
+  Date1(int, int, int);
   void set(int, int, int);
   void print();
 
@@ -25,7 +25,7 @@ int main()
 {
    // Declare today to be object of class Date
    // Values are automatically intialised by calling constructor function
-   Date today(1,9,1999);
+   Date1 today(1,9,1999);
 
    cout << "This program was written on ";
    today.print();
@@ -38,7 +38,7 @@ int main()
 }
 
 // Date constructor function definition
-Date::Date(int d, int m, int y)
+Date1::Date1(int d, int m, int y)
 {
   if(d>0 && d<31) day = d;
   if(m>0 && m<13) month = m;
@@ -46,7 +46,7 @@ Date::Date(int d, int m, int y)
 }
 
 // Date member function definitions
-void Date::set(int d, int m, int y)
+void Date1::set(int d, int m, int y)
 {
   if(d>0) {
     if (d<31){
@@ -63,7 +63,7 @@ void Date::set(int d, int m, int y)
   }
 }
 
-void Date::print()
+void Date1::print()
 {
   cout << day << "-" << month << "-" << year << endl;
 }

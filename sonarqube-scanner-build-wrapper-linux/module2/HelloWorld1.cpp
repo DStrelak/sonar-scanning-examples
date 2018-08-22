@@ -2,7 +2,7 @@
 using namespace std;
 
 int test() {
-return;
+return -1;
 int a = 0;
 int b = 5-a;
 return b;
