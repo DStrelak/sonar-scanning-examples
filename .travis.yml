@@ -10,4 +10,4 @@ before_install:
  - cd sonarqube-scanner-build-wrapper-linux
 script: 
  - build-wrapper-linux-x86-64 --out-dir bw-outputs ./build.sh
- - sonar-scanner
+ - sonar-scanner -X
