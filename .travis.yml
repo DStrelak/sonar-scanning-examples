@@ -12,4 +12,4 @@ script:
  - popd
  - pushd sonarqube-scanner-build-wrapper-linux/src/module2 && build-wrapper-linux-x86-64 --out-dir bw-outputs ./build.sh
  - popd
- - sonar-scanner -X
+ - sonar-scanner
