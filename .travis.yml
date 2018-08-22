@@ -8,8 +8,8 @@ addons:
         secure: $SONAR_TOKEN
 
 script: 
- - pushd sonarqube-scanner-build-wrapper-linux/module1 && build-wrapper-linux-x86-64 --out-dir bw-outputs ./build.sh
+ - pushd sonarqube-scanner-build-wrapper-linux/src/module1 && build-wrapper-linux-x86-64 --out-dir bw-outputs ./build.sh
  - popd
- - pushd sonarqube-scanner-build-wrapper-linux/module2 && build-wrapper-linux-x86-64 --out-dir bw-outputs ./build.sh
+ - pushd sonarqube-scanner-build-wrapper-linux/src/module2 && build-wrapper-linux-x86-64 --out-dir bw-outputs ./build.sh
  - popd
  - sonar-scanner -X
