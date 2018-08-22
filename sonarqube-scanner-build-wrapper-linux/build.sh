@@ -4,13 +4,13 @@ rm -rf build
 
 echo "BUILDING"
 mkdir build
-g++ -Wall -o build/BiggestUnInt module1/BiggestUnInt.cc
-g++ -Wall -o build/HelloWorld module1/HelloWorld.cpp
-g++ -Wall -o build/SimpleClass module1/SimpleClass.cc
+g++ -Wall -o build/BiggestUnInt module1/src/BiggestUnInt.cc
+g++ -Wall -o build/HelloWorld module1/src/HelloWorld.cpp
+g++ -Wall -o build/SimpleClass module1/src/SimpleClass.cc
 
-g++ -Wall -o build/BiggestUnInt module2/BiggestUnIntt.cc
-g++ -Wall -o build/HelloWorld module2/HelloWorldt.cpp
-g++ -Wall -o build/SimpleClass module2/SimpleClasst.cc
+g++ -Wall -o build/BiggestUnInt module2/src/BiggestUnIntt.cc
+g++ -Wall -o build/HelloWorld module2/src/HelloWorldt.cpp
+g++ -Wall -o build/SimpleClass module2/src/SimpleClasst.cc
 RC=$?
 
 if [ $RC -ne 0 ]; then
