@@ -6,11 +6,10 @@ addons:
     organization: "dstrelak-github"
     token:
         secure: $SONAR_TOKEN
-before_install:
- - cd sonarqube-scanner-build-wrapper-linux
+
 script: 
- - pushd module1 && build-wrapper-linux-x86-64 --out-dir bw-outputs ./build.sh
+ - pushd sonarqube-scanner-build-wrapper-linux/module1 && build-wrapper-linux-x86-64 --out-dir bw-outputs ./build.sh
  - popd
- - pushd module2 && build-wrapper-linux-x86-64 --out-dir bw-outputs ./build.sh
+ - pushd sonarqube-scanner-build-wrapper-linux/module2 && build-wrapper-linux-x86-64 --out-dir bw-outputs ./build.sh
  - popd
  - sonar-scanner -X
