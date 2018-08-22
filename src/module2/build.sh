@@ -5,6 +5,7 @@ mkdir build
 g++ -Wall -o build/BiggestUnInt src/BiggestUnIntt.cc
 g++ -Wall -o build/HelloWorld src/HelloWorldt.cpp
 g++ -Wall -o build/SimpleClass src/SimpleClasst.cc
+g++ -Wall -o build/dunno src/dunno.cc
 
 RC=$?
 
