@@ -49,7 +49,7 @@ Date2::Date2(int d, int m, int y)
 // Date member function definitions
 void Date2::set(int d, int m, int y)
 {
-  uint tmp = -10;
+  unsigned int tmp = -10;
   if (tmp < 0) return;
   if(d>0) {
     if (d<31){
